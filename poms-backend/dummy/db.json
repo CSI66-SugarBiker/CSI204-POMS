@@ -1,0 +1,126 @@
+{
+    "purchase_requests": [
+        {
+            "purchaseRequestId": "PR001",
+            "createdBy": "U001",
+            "createdAt": "2023-10-01T12:00:00Z",
+            "description": "Request for office supplies",
+            "status": "Pending",
+            "totalPrice": 1500,
+            "requiredDate": "2023-10-15"
+        },
+        {
+            "purchaseRequestId": "PR002",
+            "createdBy": "U003",
+            "createdAt": "2023-10-02T12:00:00Z",
+            "description": "Request for IT equipment",
+            "status": "Approved",
+            "totalPrice": 5000,
+            "requiredDate": "2023-10-10"
+        }
+    ],
+    "purchase_request_items": [
+        {
+            "itemId": "I001",
+            "purchaseRequestId": "PR001",
+            "description": "A4 Paper",
+            "unit": "Ream",
+            "unitPrice": 100,
+            "quantity": 10,
+            "totalItemPrice": 1000
+        },
+        {
+            "itemId": "I002",
+            "purchaseRequestId": "PR001",
+            "description": "Pens",
+            "unit": "Box",
+            "unitPrice": 50,
+            "quantity": 10,
+            "totalItemPrice": 500
+        },
+        {
+            "itemId": "I003",
+            "purchaseRequestId": "PR002",
+            "description": "Laptop",
+            "unit": "Piece",
+            "unitPrice": 4000,
+            "quantity": 1,
+            "totalItemPrice": 4000
+        }
+    ],
+    "purchase_orders": [
+        {
+            "purchaseOrderId": "PO001",
+            "purchaseRequestId": "PR001",
+            "createdAt": "2023-10-02T12:00:00Z",
+            "sellerName": "ABC Supplies",
+            "sellerContact": "Jane Smith",
+            "description": "Order for office supplies",
+            "requiredDate": "2023-10-15",
+            "totalPrice": 1500,
+            "paymentTerms": "Net 30",
+            "referenceNumber": "PR001"
+        }
+    ],
+    "purchase_order_items": [
+        {
+            "itemId": "I001",
+            "purchaseOrderId": "PO001",
+            "description": "A4 Paper",
+            "unit": "Ream",
+            "unitPrice": 100,
+            "quantity": 10,
+            "totalItemPrice": 1000
+        },
+        {
+            "itemId": "I002",
+            "purchaseOrderId": "PO001",
+            "description": "Pens",
+            "unit": "Box",
+            "unitPrice": 50,
+            "quantity": 10,
+            "totalItemPrice": 500
+        }
+    ],
+    "asset_receipts": [
+        {
+            "receiptId": "R001",
+            "purchaseOrderId": "PO001",
+            "receivedDate": "2023-10-10",
+            "referenceNumber": "PO001",
+            "createdAt": "2023-10-10T12:00:00Z",
+            "updatedAt": "2023-10-10T12:00:00Z"
+        }
+    ],
+    "asset_receipt_items": [
+        {
+            "receiptId": "R001",
+            "purchaseOrderId": "PO001",
+            "receivedQuantity": 10,
+            "unit": "Ream",
+            "description": "A4 Paper",
+            "receivedDate": "2023-10-10",
+            "referenceNumber": "PO001"
+        }
+    ],
+    "asset_receipt_details": [
+        {
+            "detailId": "D001",
+            "receiptItemId": "R001",
+            "receivedQuantity": 10,
+            "receivedDate": "2023-10-10",
+            "quality": 9,
+            "createdAt": "2023-10-10T12:00:00Z",
+            "updatedAt": "2023-10-10T12:00:00Z"
+        }
+    ],
+    "notifications": [
+        {
+            "notificationId": "N001",
+            "userId": "U001",
+            "message": "Low stock alert: A4 Paper",
+            "read": false,
+            "createdAt": "2023-10-01T12:00:00Z"
+        }
+    ]
+}
