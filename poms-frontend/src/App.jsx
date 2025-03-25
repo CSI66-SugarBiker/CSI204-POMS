@@ -1,5 +1,6 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/Auth/Login";
 import Layout from "./components/Layout/Layout";
 import PurchasingDashboard from "./pages/Purchasing/Dashboard";
 import AccountingDashboard from "./pages/Accounting/Dashboard";
@@ -9,7 +10,6 @@ import OrderTracking from "./pages/Administrative/OrderTracking";
 import Inventory from "./pages/Administrative/Inventory";
 import History from "./pages/Administrative/History";
 import PurchaseHistory from "./pages/Purchasing/PurchaseHistory";
-import UserManagement from "./pages/Admin/UserManagement";
 import ActivityLog from "./pages/Admin/ActivityLog";
 import Setting from "./pages/Admin/Setting";
 import NotFound from "./pages/NotFound";
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/login" element={<LoginPage />} />
         <Route element={<Layout />}>
           {/* Purchasing Department */}
           <Route path="/purchasing/dashboard" element={<PurchasingDashboard />} />
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/administrative/history" element={<History />} />
 
           {/* Admin */}
-          <Route path="/admin/users" element={<UserManagement />} />
+          <Route path="/admin/users" element={<AdminUserManagement />} />
           <Route path="/admin/activity-log" element={<ActivityLog />} />
           <Route path="/admin/settings" element={<Setting />} />
 
