@@ -3,7 +3,7 @@ import React from 'react';
 const PurchaseHistory = () => {
     return (
         <div>
-            Purchase History
+            Purchasing History
         </div>
     );
 }

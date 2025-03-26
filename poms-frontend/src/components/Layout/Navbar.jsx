@@ -44,6 +44,15 @@ const Navbar = () => {
         <Link to="/admin/settings" className="text-white">
           Admin Settings
         </Link>
+        <Link to="/procurement/dashboard" className="text-white">
+          Procurement Dashboard
+        </Link> 
+        <Link to="/procurement/inventory" className="text-white">
+          Procurement Inventory
+        </Link>
+        <Link to="/procurement/procurement-history" className="text-white">
+          Procurement History
+        </Link>
       </div>
     </nav>
   );
