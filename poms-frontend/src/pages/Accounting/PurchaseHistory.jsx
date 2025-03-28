@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PurchaseHistory = () => {
+const AccPurchaseHistory = () => {
     return (
         <div>
             Purchase History
@@ -8,4 +8,4 @@ const PurchaseHistory = () => {
     );
 }
 
-export default PurchaseHistory;
+export default AccPurchaseHistory;

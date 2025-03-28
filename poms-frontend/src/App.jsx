@@ -9,7 +9,8 @@ import AdminDashboard from "./pages/Administrative/Dashboard";
 import OrderTracking from "./pages/Administrative/OrderTracking";
 import Inventory from "./pages/Administrative/Inventory";
 import History from "./pages/Administrative/History";
-import PurchaseHistory from "./pages/Purchasing/PurchaseHistory";
+import PurPurchaseHistory from "./pages/Purchasing/PurchaseHistory";
+import AccPurchaseHistory from "./pages/Accounting/PurchaseHistory";
 import ActivityLog from "./pages/Admin/ActivityLog";
 import Setting from "./pages/Admin/Setting";
 import NotFound from "./pages/NotFound";
@@ -24,11 +25,11 @@ const App = () => {
           {/* Purchasing Department */}
           <Route path="/purchasing/dashboard" element={<PurchasingDashboard />} />
           <Route path="/purchasing/inventory" element={<Inventory />} />
-          <Route path="/purchasing/history" element={<PurchaseHistory />} />
+          <Route path="/purchasing/history" element={<PurPurchaseHistory />} />
 
           {/* Accounting Department */}
           <Route path="/accounting/dashboard" element={<AccountingDashboard />} />
-          <Route path="/accounting/history" element={<PurchaseHistory />} />
+          <Route path="/accounting/history" element={<AccPurchaseHistory />} />
 
           {/* Administrative Department */}
           <Route path="/administrative/dashboard" element={<AdminDashboard />} />

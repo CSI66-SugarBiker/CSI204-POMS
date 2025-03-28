@@ -34,6 +34,7 @@ const LoginPage = () => {
       redirectUser(response.data.role);
     } catch (err) {
       setError(HandleLoginError);
+      document.getElementById("password").value = "";
       document.getElementById("password").focus();
     }
   };
