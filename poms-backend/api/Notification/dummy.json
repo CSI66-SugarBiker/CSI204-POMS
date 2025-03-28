@@ -1,0 +1,17 @@
+{
+  "ur": {},
+  "r": {
+    "N001": {
+      "notificationId": "N003",
+      "userId": "U001",
+      "message": "Low stock alert: A4 Paper",
+      "createdAt": "2023-10-01T12:00:00Z"
+    },
+    "N002": {
+      "notificationId": "N001",
+      "userId": "U001",
+      "message": "Low stock alert: A4 Paper",
+      "createdAt": "2023-10-01T12:00:00Z"
+    }
+  }
+}

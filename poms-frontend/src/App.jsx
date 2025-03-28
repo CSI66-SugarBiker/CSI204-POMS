@@ -14,6 +14,9 @@ import AccPurchaseHistory from "./pages/Accounting/PurchaseHistory";
 import ActivityLog from "./pages/Admin/ActivityLog";
 import Setting from "./pages/Admin/Setting";
 import NotFound from "./pages/NotFound";
+import ProcurementDashboard from "./pages/Procurement/Dashboard";
+import ProcurementInventory from "./pages/Procurement/Inventory"; 
+import ProcurementHistory from "./pages/Procurement/ProcurementHistory";
 import "./App.css";
 
 const App = () => {
@@ -42,6 +45,10 @@ const App = () => {
           <Route path="/admin/activity-log" element={<ActivityLog />} />
           <Route path="/admin/settings" element={<Setting />} />
 
+          <Route path="/procurement/dashboard" element={<ProcurementDashboard />} />
+          <Route path="/procurement/inventory" element={<ProcurementInventory />} />
+          <Route path="/procurement/procurement-history" element={<ProcurementHistory />} />
+          
           {/* 404 Not Found */}
           <Route path="*" element={<NotFound />} />
         </Route>
